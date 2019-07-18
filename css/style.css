@@ -1,71 +1,50 @@
+/*Apllies to all of them*/
+
+h1, h2 {
+  color: rgb(53, 172, 126);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navtitle {
+  color: rgb(43, 109, 41);
+  font-size: 30px;
+  font-family: 'Pangolin', cursive;
+}
+
+a:hover {
+  color: rgb(43, 109, 41)
+}
+
+.indextitle {
+  font-size: 40px;
+  font-family: 'Averia Libre';
+}
+
 /* This styles apply to my Index page */
 
 #homeimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 62%;
   border-radius: 25px;
   border: 5px solid #73AD21;
   padding: 20px;
   height: 50%
 }
 
-#title {
-  text-align-last: center;
-}
-
-.img1 {
-  border-radius: 10%
-}
-
-.display-4 {
-  font-weight: bold;
-  color: rgb(28, 59, 28);
-  font-size: 65px;
-  font-family: Helvetica
+p {
+  font-size: 15px;
 }
 
 /* This styles apply to my Login page */
 
-#account {
-  text-align: center
-}
-
-#hr {
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-top: 3%;
-  border-width: 3px;
-}
-
 .Signin {
-  margin-top: 30%;
-  padding: 5%;
+  margin-top: 10%;
+  padding: 2%;
   border-radius: 20px;
   border-style: solid;
   border-color: rgb(127, 197, 197);
   box-shadow: 10px 10px 5px grey;
-}
-
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
 }
 
 /* This styles apply to my Information page*/
@@ -84,9 +63,12 @@
   border-color: lightseagreen;
 }
 
-th{ color:rgb(56, 146, 56)}
+th {
+  color: rgb(56, 146, 56)
+}
 
-/*Apllies to About page*/ 
+/*Apllies to About page*/
+
 .row {
   padding: 5%;
   text-align: justify;
@@ -97,16 +79,93 @@ th{ color:rgb(56, 146, 56)}
   font-size: 30px
 }
 
+/*Apllies to all of them*/
 
-/*Apllies to all of them*/ 
-h1,h2 {
-  color:rgb(53, 172, 126);
+h1, h2 {
+  color: rgb(53, 172, 126);
   font-size: 25px;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif }
-
- .navtitle{ color: rgb(43, 109, 41);
-font-size: 30px  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+.navtitle {
+  color: rgb(43, 109, 41);
+  font-size: 30px
+}
 
+/* This styles apply to my Information page*/
+
+.cards {
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: lightseagreen;
+}
+
+th {
+  color: rgb(56, 146, 56)
+}
+
+.infotitle {
+  font-size: 30px;
+  font-family: 'Averia Libre', cursive;
+}
+
+/*Apllies to About page*/
+
+.row {
+  padding: 5%;
+  text-align: justify;
+  width: 100%;
+}
+
+.img1 {
+  border-radius: 15%
+}
+
+/*Footer*/
+
+.footer {
+  margin-top: 30px;
+  font-size: 11px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Media for extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .navtitle {
+    font-size: 20px
+  }
+  .indextitle {
+    font-size: 30px
+  }
+  #homeimg {
+    width: 80%
+  }
+  h2, p {
+    font-size: 12px
+  }
+  footer {
+    margin-top: 30%;
+    padding: 4%;
+  }
+  .img1 {
+  display: none
+  }
+  .img2 {
+    display: none
+  }
+  .aboutlog {
+    font-size: 80%
+  }
+  .Signin {
+    width: 80%;
+    margin-left: 10%
+  }
+}
+
+@media only screen and (max-width: 1024px) { 
+  .img1 { width: 90%
+  }
+}

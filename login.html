@@ -9,41 +9,48 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <title>VisitEcuador.com</title>
 </head>
 
 <body class="text-center">
-  <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <nav class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <img src="images/logo.png" alt="logo">
-    <h1 class="my-0 mr-md-auto font-weight-normal">VisitEcuador.com</h1>
-    <nav class="my-2 my-md-0 mr-md-3">
+    <a class="text-decoration-none my-0 mr-md-auto navtitle " href="index.html">VisitEcuador.com</a>
+    <div class="my-2 my-md-0 mr-md-3">
       <a class="p-2 text-dark" href="index.html">Home</a>
       <a class="p-2 text-dark" href="about.html">About</a>
-      <a class="p-2 text-dark" href="information.html">Itinerary</a>
       <a class="p-2 text-dark" href="registration.html">Register</a>
-    </nav>
-    <a class="btn btn-outline-primary" href="login.html">Login</a>
-  </header>
-  <!-- Start of form-->
-  <section class="col-md-4 offset-4">
-  <form class="form-signin Signin text-center" action="information.html" autocomplete="on">
-    <img class="mb-4" src="images/username.png" alt=" username image" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit" value="Go to information">Login</button>
-  </form>
-  <hr id="hr">
-  <p id="account">Don't have an account? <a href="registration.html"> Register</a> </p>
-</section>
+    <a class="btn btn-outline-primary" href="login.html">Login</a>
+  </nav>
+  <!-- Start of form-->
+  <Main class="col-md-4 offset-md-4 center text-center Signin">
+    <!--<form class="form-signin text-center" action="information.html" autocomplete="off" method="POST">-->
+    <form class="form-signin text-center " action="information.html" autocomplete="off" method="GET">
+      <img class="mb-4" src="images/username.png" alt=" username image">
+      <h2 class="h3 mb-3 font-weight-normal">Please Sign In</h2>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <br>
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" value="Go to information">Login</button>
+      <p>Don't have an account? <a href="registration.html"> Register</a> </p>
+    </form>
+  </Main>
+  <!--Footer-->
+  <footer class="footer text-center">
+    The content of this page is for Educational purposes only. Images and Content have been colected from different
+    sites.
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
