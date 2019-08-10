@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Enjoy the Outdoors</title>
+</head>
+
+<body>
+    <nav
+        class=" font-weight-bold d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <a class="title my-0 mr-md-auto font-weight-normal text-decoration-none" href="index.html">Enjoy the
+            Outdoors</a>
+        <div class="my-2 my-md-0 mr-md ">
+            <a class="p-2 text-success" href="index.html">Home</a>
+            <a class="p-2 text-success" href="parks.html">National Parks</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!--Form-->
+            <form class="form " autocomplete="off" method="GET">
+                <section class="text-center container col-md-7  formBorder p-4 p-md-5  rounded border border-success">
+                    <!--Moutains dropdown-->
+                    <div class="mountains font-weight-bold text-center select1">
+                        <label for="mountainsdd"> Mountains</label>
+                        <select class="custom-select d-block w-100 " id="mountainsdd" name="mountainsdd">
+                        </select>
+                    </div>
+                    <!--Table-->
+                    <div class="col-md-9 mb-3">
+                        <table class="table table-bordered" id="tableMnt">
+                        </table>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/mountains.js"></script>
+</body>
+
+</html>
