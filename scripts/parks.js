@@ -92,10 +92,15 @@ window.onload = function () {
             cell5.innerHTML = "<b>Phone</b>"
             cell6.innerHTML = "<b>Fax</b>"
 
+            let tableBody=document.createElement("tbody")           
+            table.appendChild(tableBody)
+
             // Loop thru the JSON Data to find the parks 
             for (let i = 0; i < objs.parks.length; i++) {
                 if (locationSelection == objs.parks[i].State) {
-                    let row = mytable.insertRow(mytable.rows.length)
+
+                    mytable.tBodies[0].insertRow
+                    let row = mytable.tBodies[0].insertRow(mytable.tBodies[0].length)
 
                     cell0 = row.insertCell(0);
                     cell0.innerHTML = objs.parks[i].LocationName;
@@ -147,12 +152,16 @@ window.onload = function () {
             cell5.innerHTML = "<b>Phone</b>"
             cell6.innerHTML = "<b>Fax</b>"
 
+            let tableBody=document.createElement("tbody")           
+            table.appendChild(tableBody)
+
             // Loop thru the JSON file
             for (let i = 0; i < objs.parks.length; i++) {
 
                 if (objs.parks[i].LocationName.toLowerCase().indexOf(mydropDown2.value.toLowerCase()) >= 0) {
 
-                    let row = mytable.insertRow(mytable.rows.length)
+                    mytable.tBodies[0].insertRow
+                    let row = mytable.tBodies[0].insertRow(mytable.tBodies[0].length)
 
                     cell0 = row.insertCell(0);
                     cell0.innerHTML = objs.parks[i].LocationName;
